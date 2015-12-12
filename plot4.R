@@ -6,7 +6,7 @@ power$DateTime<-as.POSIXct(paste(power$Date,power$Time),
                            format="%e/%m/%Y %H:%M:%S")
 #subset data to incude only dates of interest
 power<-power[which(power$Date=="1/2/2007"|power$Date=="2/2/2007"),]
-#create and save plot as plot2.png
+#create and save plot as plot4.png
 png(filename = "plot4.png",width = 480,height = 480,units = "px")
 par(mfcol=c(2,2))
 plot(power$DateTime,power$Global_active_power,type="l",
